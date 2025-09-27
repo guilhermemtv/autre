@@ -1,0 +1,7 @@
+/config.local.php
+/node_modules/
+/.idea/
+/.vscode/
+/cache/
+/uploads/*
+!/uploads/.gitkeep
