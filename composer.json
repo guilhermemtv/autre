@@ -1,0 +1,28 @@
+{
+    "name": "autre/budgeting-app",
+    "description": "Budgeting and order management platform",
+    "type": "project",
+    "require": {
+        "php": "^7.2",
+        "dompdf/dompdf": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    }
+}
